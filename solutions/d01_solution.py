@@ -1,7 +1,10 @@
+import os
 
 # Part 1: Find 2 numbers that add to 2020 and multiply them
 
-with open(r"C:\Users\MPatr\OneDrive\Documents\Coding Projects\Advent-of-Code\input.txt", "r") as f:
+dirname = os.path.dirname(os.path.abspath(''))
+filename = os.path.join(dirname,'inputs','d01_input.txt')
+with open(filename, "r") as f:
     lines = f.read().splitlines()
 
 for num in lines:

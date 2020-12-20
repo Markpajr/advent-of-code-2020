@@ -1,8 +1,8 @@
 import os
 from statistics import median
 
-dirname = os.path.abspath('')
-filename = os.path.join(dirname,'input.txt')
+dirname = os.path.dirname(os.path.abspath(''))
+filename = os.path.join(dirname,'inputs','d05_input.txt')
 with open(filename,"r") as f:
     seats = f.read().splitlines()
 

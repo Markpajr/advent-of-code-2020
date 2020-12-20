@@ -1,6 +1,9 @@
 import re
+import os
 
-with open(r"C:\Users\MPatr\OneDrive\Documents\Coding Projects\Advent-of-Code\Day-02\puzzle.txt","r") as f:
+dirname = os.path.dirname(os.path.abspath(''))
+filename = os.path.join(dirname,'inputs','d02_input.txt')
+with open(filename,"r") as f:
     lines = f.read().splitlines()
 
 regmatch = "(\d+)-(\d+)\s+(\w+):\s+(\w+)"

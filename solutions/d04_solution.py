@@ -1,8 +1,8 @@
 import re
 import os
 
-dirname = os.path.abspath('')
-filename = os.path.join(dirname,'input.txt')
+dirname = os.path.dirname(os.path.abspath(''))
+filename = os.path.join(dirname,'inputs','d04_input.txt')
 with open(filename,"r") as f:
     passports = f.read().split('\n\n')
     passports = [passport.replace('\n',' ') for passport in passports]

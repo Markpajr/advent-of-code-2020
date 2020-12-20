@@ -1,8 +1,8 @@
 import os
 import math
 
-dirname = os.path.abspath('')
-filename = os.path.join(dirname,'input.txt')
+dirname = os.path.dirname(os.path.abspath(''))
+filename = os.path.join(dirname,'inputs','d03_input.txt')
 
 puzzle = open(filename,"r").read().splitlines()
 
