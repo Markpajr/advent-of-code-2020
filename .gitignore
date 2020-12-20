@@ -1,2 +1,5 @@
 *.ipynb
 
+.envrc
+.vscode/settings.json
+*.ipynb_checkpoints/
